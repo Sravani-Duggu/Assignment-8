@@ -1,0 +1,91 @@
+.edit-student {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.edit-student h2{
+    margin-bottom: 30px;
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #0d47a1;
+}
+
+.edit-student form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.edit-student label {
+    font-weight: 500;
+    color: #0d47a1;
+    margin-bottom: 5px;
+    font-size: 0.95em;
+}
+
+.edit-student input {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+    transition: all 0.2s ease;
+}
+
+.edit-student input:focus {
+    border-color: #0d47a1;
+    outline: none;
+    box-shadow: 0 0 5px rgba(13, 71, 161, 0.2);
+}
+
+button[type="submit"], button[type="button"] {
+    padding: 12px 25px;
+    margin: 20px 5px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button[type="submit"] {
+    background-color: #0d47a1;
+    color: #fff;
+}
+
+button[type="button"] {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+button[type="submit"]:hover {
+    background-color: #094080;
+    transform: translateY(-2px);
+}
+
+button[type="button"]:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+    .edit-student {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .edit-student h2 {
+        font-size: 1.5em;
+    }
+}
